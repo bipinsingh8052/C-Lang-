@@ -127,31 +127,53 @@
 
 
 
+// #include<iostream>
+// using namespace std;
+// int main ()
+// {
+//     int Number1;
+//     int Number2;
+//     int Number3;
+//     cout<<"Enter the THree number :";
+//     cin >> Number1 >>  Number2 >> Number3;
+//     if ( Number1 > Number2 )
+//     {
+//         if(Number1 > Number3){
+//             cout << "This  1 Number is grater then :" ;
+//         }
+//        else {
+//                 cout << "This  3 is grater then :" ;
+//             }
+//     }
+    
+//     else{
+//         if ( Number2 > Number3 ){
+//            cout << "Number 2 is grater then ";
+//         }
+//         else{
+//             cout << "This  3 is grater then :" ;
+//         }
+//     }
+// }
+
+
+
 #include<iostream>
 using namespace std;
 int main ()
 {
-    int Number1;
-    int Number2;
-    int Number3;
-    cout<<"Enter the THree number :";
-    cin >> Number1 >>  Number2 >> Number3;
-    if ( Number1 > Number2 )
-    {
-        if(Number1 > Number3){
-            cout << "This  1 Number is grater then :" ;
-        }
-       else {
-                cout << "This  3 is grater then :" ;
-            }
-    }
+   int start ;
+   cout << "Enter the starting point:";
+   cin >> start;
+   int end ;
+   cout << "Enter the ending point:";
+   cin >> end;
+   int total=0;
+   int count=0;
+   for ( int i=5 ; i<=100; i+=5){
+   cout<<i;
     
-    else{
-        if ( Number2 > Number3 ){
-           cout << "Number 2 is grater then ";
-        }
-        else{
-            cout << "This  3 is grater then :" ;
-        }
-    }
+   }
+   cout<<total<<"/n";
+   cout<<count;
 }
