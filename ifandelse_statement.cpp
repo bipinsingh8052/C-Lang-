@@ -158,22 +158,86 @@
 
 
 
-#include<iostream>
-using namespace std;
-int main ()
-{
-   int start ;
-   cout << "Enter the starting point:";
-   cin >> start;
-   int end ;
-   cout << "Enter the ending point:";
-   cin >> end;
-   int total=0;
-   int count=0;
-   for ( int i=5 ; i<=100; i+=5){
-   cout<<i;
+// #include<iostream>
+// using namespace std;
+// int main ()
+// {
+//    int start ;
+//    cout << "Enter the starting point:";
+//    cin >> start;
+//    int end ;
+//    cout << "Enter the ending point:";
+//    cin >> end;
+//    int total=0;
+//    int count=0;
+//    for ( int i=5 ; i<=100; i+=5){
+//    cout<<i;
     
-   }
-   cout<<total<<"/n";
-   cout<<count;
-}
+//    }
+//    cout<<total<<"/n";
+//    cout<<count;
+// }
+
+
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//    int number;
+//    cout << "Enter the number:";
+//    cin >> number;
+//    int number2 ;
+//    cout<<"Enter the number2:";
+//    cin>> number2;
+//    if(  (number%2==0&& number2% 2== 0) &&(number==number2))
+//    {
+//       int number3 =0;
+//       cout << "Enter the third number :";
+//       cin >> number3;
+//       if(number3 < 0)
+//       {
+//           number3 = number3 * (-1);
+//          cout<<"number the positive:" << number3;
+//       }
+      
+//    }
+//    else {
+//       cout << "THis calcution is not possible:";
+//    }
+   
+   
+//    return 0;
+
+// }
+
+// // w.a.p to accept two numbeer form user .if the number is positive check wheater the no div 
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//    int Number =0;
+//    cout <<"Enter the number :";
+//    cin >>Number ;
+//    if(Number > 0 )
+//    {
+//       if(Number % 3== 0 && Number % 5 ==0)
+//       {
+//          int num2 = Number / 3;
+//          int Num5 = Number / 5;
+//          cout << num2<< Num5;
+//       }
+//       else {
+//           int num2 = Number % 3;
+//          int Num5 = Number % 5;
+//          cout << num2<< Num5;
+//       }
+//    }
+//    else{
+//       cout << "Caclution is not possible:";
+//    }
+//    return 0;
+// }
+
+
+
