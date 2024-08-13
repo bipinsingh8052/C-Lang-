@@ -81,7 +81,8 @@ int main()
     //      }
           
 
-          w.a.p to di account for user if the amount lessan then total balancs then print vi __success_typeotherwise print in siffient balance
-          you 
-          withbal 
+        //   w.a.p to di account for user if the amount lessan then total balancs then print vi __success_typeotherwise print in siffient balan   you 
+        //   withbal 
           
+
+         
