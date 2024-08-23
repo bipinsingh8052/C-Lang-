@@ -298,4 +298,8 @@ int main()
         cout<<"\n";
     }
     cout<<"\n";
+    for(int i=0;i<Rows;i++)
+    {
+        
+    }
 }
