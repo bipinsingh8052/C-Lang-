@@ -19,3 +19,19 @@
 //    }
 //     return 0;
 // }
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a;
+    cout<<"Enter the number;";
+    cout<<a;
+    float total;
+    for(int i=1;i<=a;i++)
+
+    {
+        if()
+    }
+}
