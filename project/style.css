@@ -4,7 +4,7 @@
     box-sizing: border-box;
   }
   .hero_sec {
-    background-image: url(c837a6_5950adc5b1a94d49bcd90573bd105b06~mv2.jpg);
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTplzsk711kPPDVhy85DQp2gQaRpMVH5TNhPA&s");
     height: 538px;
   }
   .hero_sec .navbar {
@@ -182,13 +182,198 @@
         grid-template-columns: 1fr ;
         gap: 10px;
       }
+      
+      .section1 {
+        height: 600px;
+      }
+      .section1 .child {
+        display: flex;
+
+        flex-direction: column;
+        /* align-items: center; */
+        /* gap: 150px; */
+        padding-top: 60px;
+      }
+      
+      .section1 .menu a {
+        text-decoration: underline;
+        color: black;
+        /* padding-left: 500px;
+        padding-top: 20px; */
+        font-size: 20px;
+      }
+      .sec2 img {
+        width: 100%;
+        
+      }
+
+      .sec3 {
+        height: 530px;
+        background-color: rgba(204, 143, 52, 0.831);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .sec5{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      } 
+      
+      .sec5 .img2{
+        display: grid;
+        grid-template-rows: 1fr ;
+        gap: 10px;
+      }
+      .sec5 .img2 .images{
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 10px;
+      }
+      .sec6{
+        background-color: rgb(163, 163, 163);
+        height:600px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 200px;
+      }
+     
+      .sec6 .child6 p{
+        font-size: 40px;
+      }
+      .sec6 .child6 h1{
+        font-size: 80px;
+      }
+      .sec6 .nav2 ul {
+       list-style: none;
+        padding-right: 40px;
+      }
+      .sec6 .nav2 .item{
+        text-decoration: none;
+        text-align: right;
+        color: black;
+      }
+
+    
+     
   }
   
   /* Mobile View */
   @media screen and (max-width: 425px) {
-    
-    .container {
-      grid-template-columns: 1fr;
-    }
-  }
+    .hero_sec .navbar h1 {
+        font-size: 30px;
+        padding-left: 50px;
+      }
+
+      .hero_sec{
+        width: 100%;
+      }
+      nav ul{
+        top: 30px;
+      }
+
+      .section1 .child h1 {
+        font-size: 30px;
+      }
+      .section1 {
+        height: 700px;
+        width: 100%;
+
+        overflow: hidden;
+      }
+      .section1 .child {
+        display: flex;
+        align-items: center;
+        padding-top: 60px;
+      }
+      .section1 .child .paragraph p {
+        font-size: 20px;
+        padding: 20px;
+      }
+      .section1 .child h1 {
+        /* padding-left: 30px; */
+      }
+
+      .section1 .menu b a {
+        text-decoration: underline;
+        color: black;
+        /* padding-left: 500px;
+        padding-top: 20px; */
+        font-size: 20px;
+      }
+      .sec2 img {
+        height: 500px;
+        width: 100%;
+        gap: 20px;
+        padding: 10px;
+      }
+      .sec3 {
+        height: 730px;
+        width: 100%;
+        background-color: rgba(204, 143, 52, 0.831);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .sec3 .child2 p {
+        font-size: 60px;
+        line-height: 80px;
+
+        padding-left: 5px;
+      }
+      .sec3 .child3 p {
+        font-size: 15px;
+        line-height: 20px;
+      }
+      .sec4 .ch1 {
+        flex-direction: column;
+        height: 250px;
+        width: 100%;
+       
+      }
+      .sec4 .ch1 h1 {
+        font-size: 60px;
+
+        padding-left: 20px;
+      }
+
+      .sec5{
+        width: 100%;
+        overflow: hidden;
+      }
+      .sec6{
+        background-color: rgb(163, 163, 163);
+        height:500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        justify-content: space-around;
+      }
+     
+      .sec6 .child6 p{
+        font-size: 20px;
+      }
+      .sec6 .child6 h1{
+        font-size: 40px;
+      }
+      .sec6 .nav2 ul {
+       list-style: none;
+        padding-right: 40px;
+      }
+      .sec6 .nav2 .item{
+        text-decoration: none;
+        text-align: right;
+        color: black;
+      }
+     
+      
+
+}
   
