@@ -53,3 +53,12 @@
 //     cout <<MIN;
 // }
 
+#include<iostream>
+using namespace std;
+int main(){
+    int a;
+    cout<<"Enter the number:";
+    cin>>a;
+    a%2==0?cout<<"Even number:":cout<<"Odd number";
+
+}
