@@ -53,12 +53,55 @@
 //     cout <<MIN;
 // }
 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int a;
+//     cout<<"Enter the number:";
+//     cin>>a;
+//     a%2==0?cout<<"Even number:":cout<<"Odd number";
+//     int b;
+//     cout<<"Enter the number:";
+//     cin>> b;
+    
+
+// }
+
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int a;
+//     cout<<"Enter the number:";
+//     cin>>a;
+//     int c=(-1)*a;
+//     cout<<c;
+// }
+
+// w.a.p to count the no of digits
 #include<iostream>
 using namespace std;
-int main(){
+int main()
+{
     int a;
     cout<<"Enter the number:";
     cin>>a;
-    a%2==0?cout<<"Even number:":cout<<"Odd number";
-
+    // int digit=0;
+    // int total=0;
+    // while(a>0){
+    // int sum=a%10;
+    // total=total+sum;
+    //     a=a/10;
+    //     digit++;
+    // }
+    // cout<<digit;
+    // cout<<total;
+    if((a%4==0 )&&(a%100!=0)||a%400==0)
+    {
+        cout<<"Leap year:";
+    }
+    else{
+        cout<<"NOt leap year:";
+    }
 }
