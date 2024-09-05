@@ -97,11 +97,23 @@ int main()
     // }
     // cout<<digit;
     // cout<<total;
-    if((a%4==0 )&&(a%100!=0)||a%400==0)
-    {
-        cout<<"Leap year:";
-    }
-    else{
-        cout<<"NOt leap year:";
-    }
+    // if((a%4==0 )&&(a%100!=0)||a%400==0)
+    // {
+    //     cout<<"Leap year:";
+    // }
+    // else{
+    //     cout<<"NOt leap year:";
+    // }
+
+
+
+// int count=0;
+//     while(a!=0){
+//         a=a/10;
+//         count++;
+//     }
+//     cout<<count;
+
+    int b =23 |51;
+    cout<<b;
 }
