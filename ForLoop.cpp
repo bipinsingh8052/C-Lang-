@@ -116,4 +116,12 @@ int main()
 
     int b =23 |51;
     cout<<b;
+
+    // Xor operater
+    b=19^8;
+    b=-12;
+    b=123456<<6;
+    cout << b;
+    b=1234>>2;
+    cout<<b;
 }

@@ -245,3 +245,40 @@
 
 
 
+#include<iostream>
+using namespace std;
+int main()
+{
+    float p;
+    cout<<"Enter the physic Subject number:";
+    cin>>p;
+    float c;
+    cout<<"Enter the chemistry Subject number:";
+    cin>>c;
+    float m;
+    cout<<"Enter the maths Subject number:";
+    cin>>m;
+    float total= p+c+m;
+        float per =total/3;
+        cout<<per;
+//    int per =60;
+    if((p>=35&&m>=35&&c>=35&&c<=100)){
+       if(per<=100&&per>=60){
+        cout<<"First division";
+        }
+        else if(per<=59&&per>=50)
+        {
+            cout<<"Second division";
+        }
+        else if(per<=49&&per >=35 ){
+            cout<<"THird division";
+        }
+        else{
+            cout<<"Fail";
+        }
+    }
+    else{
+        cout<<"you got a supply :";
+    }
+      
+}
