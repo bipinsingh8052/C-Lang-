@@ -245,40 +245,87 @@
 
 
 
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     float p;
+//     cout<<"Enter the physic Subject number:";
+//     cin>>p;
+//     float c;
+//     cout<<"Enter the chemistry Subject number:";
+//     cin>>c;
+//     float m;
+//     cout<<"Enter the maths Subject number:";
+//     cin>>m;
+//     float total= p+c+m;
+//         float per =total/3;
+//         cout<<per;
+// //    int per =60;
+
+//     if((p>=35&&m>=35&&c>=35&&c<=100)){
+//        if(per<=100&&per>=60){
+//         cout<<"First division";
+//         }
+//         else if(per<=59&&per>=50)
+//         {
+//             cout<<"Second division";
+//         }
+//         else if(per<=49&&per >=35 ){
+//             cout<<"THird division";
+//         }
+//         else{
+//             cout<<"Fail";
+//         }
+//     }
+//     else{
+//         cout<<"you got a supply :";
+//     }
+      
+// }
+
+
+
+// w.a.p to display how many currercy we need to make a current amount.
 #include<iostream>
 using namespace std;
 int main()
+
 {
-    float p;
-    cout<<"Enter the physic Subject number:";
-    cin>>p;
-    float c;
-    cout<<"Enter the chemistry Subject number:";
-    cin>>c;
-    float m;
-    cout<<"Enter the maths Subject number:";
-    cin>>m;
-    float total= p+c+m;
-        float per =total/3;
-        cout<<per;
-//    int per =60;
-    if((p>=35&&m>=35&&c>=35&&c<=100)){
-       if(per<=100&&per>=60){
-        cout<<"First division";
-        }
-        else if(per<=59&&per>=50)
-        {
-            cout<<"Second division";
-        }
-        else if(per<=49&&per >=35 ){
-            cout<<"THird division";
-        }
-        else{
-            cout<<"Fail";
-        }
+   
+    // cout<<"hellow";
+    // goto hb;
+    // cout<<"normal";
+    //  hb:
+    // // return 0;
+    // for(int i=0;i<=5;i++)
+    // {
+    //     for(int j=1;j<=i;j++)
+    //     {
+    //         cout<<"*";
+           
+    //     }
+    //     cout<<"\n";
+    // }
+    // int i,number;
+    // i=0;
+    // cout<<"Enter the number :";
+    // cin>>number;
+    // hm:
+    // cout<<number*i<<"\n";
+    // i++;
+    // if(i<=10)
+    // {
+    //     goto hm;
+    // }
+    int j=10;
+    jk:
+    cout<<j<<"\n";
+    j--;
+    if(j>=0)
+    {
+        goto jk;
     }
-    else{
-        cout<<"you got a supply :";
-    }
-      
+    
+
 }
