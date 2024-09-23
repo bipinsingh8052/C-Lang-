@@ -318,14 +318,84 @@ int main()
     // {
     //     goto hm;
     // }
-    int j=10;
-    jk:
-    cout<<j<<"\n";
-    j--;
-    if(j>=0)
-    {
-        goto jk;
-    }
+    // int j=10;
+    // jk:
+    // cout<<j<<"\n";
+    // j--;
+    // if(j>=0)
+    // {
+    //     goto jk;
+    // }
     
+    int amount;
+    cout<<"Enter the amount:";
+    cin>>amount;
+    int fiveh=0,twoh=0,oneh=0,fifty=0,twenty=0,ten=0,five=0,two=0,one=0;
+    while(amount!=0)
+    {
+        if(amount>=500)
+        {
+            int sum =amount-500;
+            amount=sum;
+            fiveh++;
+        }
+        else if(amount>=200)
+        {
+            int sum =amount-200;
+            amount=sum;
+            twoh++;
+        }
+        else if(amount>=100)
+        {
+            int sum =amount-100;
+            amount=sum;
+            oneh++;
+        }else if(amount>=50)
+        {
+            int sum =amount-50;
+            amount=sum;
+            fifty++;
+        }else if(amount>=20)
+        {
+            int sum =amount-20;
+            amount=sum;
+            twenty++;
+        }
+        else if(amount>=10)
+        {
+            int sum =amount-10;
+            amount=sum;
+            ten++;
+        }else if(amount>=5)
+        {
+            int sum =amount-5;
+            amount=sum;
+            five++;
+        }
+        else if(amount>=2)
+        {
+            int sum =amount-2;
+            amount=sum;
+            two++;
+        }
+        else if(amount>=1)
+        {
+            int sum =amount-1;
+            amount=sum;
+            one++;
+        }
+        else{
+            cout<<"Not posible:";
+        }
+    }
+    cout<<"fifty hundred:"<<fiveh<<"\n";
+    cout<<"two  hundred:"<<twoh<<"\n";
+    cout<<"One hundred:"<<oneh<<"\n";
+    cout<<"fifty :"<<fifty<<"\n";
+    cout<<"twenty rupes:"<<twenty<<"\n";
+    cout<<"ten repuy:"<<ten<<"\n";
+    cout<<"five:"<<five<<"\n";
+    cout<<"two"<<two<<"\n";
+    cout<<"One"<<one<<"\n";
 
 }
