@@ -387,6 +387,7 @@ int main()
         else{
             cout<<"Not posible:";
         }
+        
     }
     cout<<"fifty hundred:"<<fiveh<<"\n";
     cout<<"two  hundred:"<<twoh<<"\n";
@@ -397,5 +398,6 @@ int main()
     cout<<"five:"<<five<<"\n";
     cout<<"two"<<two<<"\n";
     cout<<"One"<<one<<"\n";
+    
 
 }

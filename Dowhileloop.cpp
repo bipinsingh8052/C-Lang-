@@ -32,34 +32,34 @@
 // }
 
 
-#include<iostream>
-using namespace std ;
-int main()
-{
-    int Number ;
-    int Sum =0;
-    cout << "Enter the Even number :";
-     cin >> Number;
+// #include<iostream>
+// using namespace std ;
+// int main()
+// {
+//     int Number ;
+//     int Sum =0;
+//     cout << "Enter the Even number :";
+//      cin >> Number;
    
-    do {
-            if( Number %2 ==0)
-            { 
-                 Sum =Sum +Number;
-               cout << "Enter the  odd number  :";
-               cin >> Number ;
-            }
-            else {
-                 Sum =Sum+Number;
-                    cout << "Enter the  even number  :";
-                    cin >> Number ; 
-            }
+//     do {
+//             if( Number %2 ==0)
+//             { 
+//                  Sum =Sum +Number;
+//                cout << "Enter the  odd number  :";
+//                cin >> Number ;
+//             }
+//             else {
+//                  Sum =Sum+Number;
+//                     cout << "Enter the  even number  :";
+//                     cin >> Number ; 
+//             }
         
          
-        }while(Number != 0); 
+//         }while(Number != 0); 
 
-    cout<< Sum;
-    return 0;
-}
+//     cout<< Sum;
+//     return 0;
+// }
 
 
 //        
@@ -86,3 +86,79 @@ int main()
           
 
          
+
+         #include<iostream>
+         using namespace std;
+         int main()
+
+         {
+              int amount;
+                cout<<"Enter the amount:";
+                cin>>amount;
+                int fiveh=0,twoh=0,oneh=0,fifty=0,twenty=0,ten=0,five=0,two=0,one=0;
+        if(amount>=500)
+        {
+            int sum =amount-500;
+            amount=sum;
+            fiveh++;
+        }
+         if(amount>=200)
+        {
+            int sum =amount-200;
+            amount=sum;
+            twoh++;
+        }
+         if(amount>=100)
+        {
+            int sum =amount-100;
+            amount=sum;
+            oneh++;
+        } 
+        if(amount>=50)
+        {
+            int sum =amount-50;
+            amount=sum;
+            fifty++;
+        } 
+        if(amount>=20)
+        {
+            int sum =amount-20;
+            amount=sum;
+            twenty++;
+        }
+         if(amount>=10)
+        {
+            int sum =amount-10;
+            amount=sum;
+            ten++;
+        } 
+        if(amount>=5)
+        {
+            int sum =amount-5;
+            amount=sum;
+            five++;
+        }
+         if(amount>=2)
+        {
+            int sum =amount-2;
+            amount=sum;
+            two++;
+        }
+        if(amount >=1)
+        {
+            int sum =amount-1;
+            amount=sum;
+            one++;
+            cout<<sum;
+        }
+        
+          cout<<"fifty hundred:"<<fiveh<<"\n";
+    cout<<"two  hundred:"<<twoh<<"\n";
+    cout<<"One hundred:"<<oneh<<"\n";
+    cout<<"fifty :"<<fifty<<"\n";
+    cout<<"twenty rupes:"<<twenty<<"\n";
+    cout<<"ten repuy:"<<ten<<"\n";
+    cout<<"five:"<<five<<"\n";
+    cout<<"two"<<two<<"\n";
+    cout<<"One"<<one<<"\n";
+         }

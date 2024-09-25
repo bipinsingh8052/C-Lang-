@@ -102,3 +102,9 @@ int main()
     }
     return 0;
 }
+
+
+// switch 
+// it is taken less time as compare as if/// condition base programing
+// if condition
+// its work nesting // choose base programming
