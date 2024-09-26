@@ -46,65 +46,104 @@
 
 
 
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int Month;
+//     cout << "Enter the Month:";
+//     cout <<" Enter press 1 from month january , press 2 month Feb ....... and so Press 11 for nov , 12 for Dec and If you not see day then you press 0 :";
+//     cin >> Month;
+//     switch (Month)
+//     {
+//     case 1:
+//         cout << "IN this month 31 days";
+//         break;
+//      case 2:
+//         cout << "IN this month 28 days";
+//         break;
+//     case 3:
+//         cout << "IN this month 31 days";
+//         break;
+//     case 4:
+//         cout << "IN this month 30 days";
+//         break;
+//     case 5:
+//         cout << "IN this month 31 days";
+//         break;
+//     case 6:
+//         cout << "IN this month 30 days";
+//         break;
+//     case 7:
+//         cout << "IN this month 31 days";
+//         break;
+//     case 8:
+//         cout << "IN this month 30 days";
+//         break;
+//     case 9:
+//         cout << "IN this month 31 days";
+//         break;
+//     case 10:
+//         cout << "IN this month 30 days";
+        
+//         break;
+//     case 11:
+//         cout << "IN this month 31 days";
+//         break;
+//     case 12:
+//         cout << "IN this month 30 days";
+//         break;
+//      case 0:
+//         cout << "Exiting...... ";
+//         break;   
+//     default:
+//        cout << "Your press a worng  option:";
+//         break;
+//     }
+//     return 0;
+// }
+
+
+// // switch 
+// // it is taken less time as compare as if/// condition base programing
+// // if condition
+// // its work nesting // choose base programming
+
+
 #include<iostream>
 using namespace std;
 int main()
 {
-    int Month;
-    cout << "Enter the Month:";
-    cout <<" Enter press 1 from month january , press 2 month Feb ....... and so Press 11 for nov , 12 for Dec and If you not see day then you press 0 :";
-    cin >> Month;
-    switch (Month)
+    int a,b;
+    cout<<"Enter the number a :";
+    cin >>a;
+    cout<<"Enter the number b:";
+    cin>>b;
+    int c=0;
+    cout<<"Enter for swap: 1"<<"\n";
+    cout<<"select for 2 for max value:"<<"\n";
+    cin>>c;
+    switch (c)
     {
-    case 1:
-        cout << "IN this month 31 days";
-        break;
-     case 2:
-        cout << "IN this month 28 days";
-        break;
-    case 3:
-        cout << "IN this month 31 days";
-        break;
-    case 4:
-        cout << "IN this month 30 days";
-        break;
-    case 5:
-        cout << "IN this month 31 days";
-        break;
-    case 6:
-        cout << "IN this month 30 days";
-        break;
-    case 7:
-        cout << "IN this month 31 days";
-        break;
-    case 8:
-        cout << "IN this month 30 days";
-        break;
-    case 9:
-        cout << "IN this month 31 days";
-        break;
-    case 10:
-        cout << "IN this month 30 days";
-        
-        break;
-    case 11:
-        cout << "IN this month 31 days";
-        break;
-    case 12:
-        cout << "IN this month 30 days";
-        break;
-     case 0:
-        cout << "Exiting...... ";
-        break;   
-    default:
-       cout << "Your press a worng  option:";
+    case 1:{
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        cout<<"a is value:"<<a<<"\n"<<"b is value"<<b;
         break;
     }
-    return 0;
+    case 2:{
+        if(a>b){
+            cout<<"A is grater then b"<<"\n";
+        }
+        else{
+            cout<<"B is greater then a:"<<"\n";
+        }
+        break;
+    }
+    
+    default:
+        cout<<"Invalid value";
+        break;
+    }
 }
-
-
-// switch 
-// it is taken less time as compare as if/// condition base programing
-// if condition
-// its work nesting // choose base programming
