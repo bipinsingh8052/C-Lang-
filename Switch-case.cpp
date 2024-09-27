@@ -110,40 +110,149 @@
 // // its work nesting // choose base programming
 
 
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int a,b;
+//     cout<<"Enter the number a :";
+//     cin >>a;
+//     cout<<"Enter the number b:";
+//     cin>>b;
+//     int c=0;
+//     cout<<"Enter for swap: 1"<<"\n";
+//     cout<<"select for 2 for max value:"<<"\n";
+//     cin>>c;
+//     // switch (c)
+//     // {
+//     // case 1:{
+//     //     a=a+b;
+//     //     b=a-b;
+//     //     a=a-b;
+//     //     cout<<"a is value:"<<a<<"\n"<<"b is value"<<b;
+//     //     break;
+//     // }
+//     // case 2:{
+//     //     if(a>b){
+//     //         cout<<"A is grater then b"<<"\n";
+//     //     }
+//     //     else{
+//     //         cout<<"B is greater then a:"<<"\n";
+//     //     }
+//     //     break;
+//     // }
+    
+//     // default:
+//     //     cout<<"Invalid value";
+//     //     break;
+//     // }
+
+
+// }
+
+
+
+// Q.1 Program to take the hours and minutes and the show that whether it is AM or PM by using the switch statement.
+
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int a;
+//     cout<<"Enter the hour:";
+//     cin>>a;
+//     switch(a)
+//     {
+//         case 1:
+//         case 2:
+//         case 3:
+//         case 4:
+//         case 5:
+//         case 6:
+//         case 8:
+//         case 7:
+//         case 9:
+//         case 10:
+//         case 11:
+//         {
+//             cout <<"AM"<<a;
+//             break;
+//         }
+//         case 12:
+//         case 21:
+//         case 13:
+//         case 14:
+//         case 15:
+//         case 16:
+//         case 17:
+//         case 18:
+//         case 19:
+//         case 20:
+//         case 22:
+//         case 23:
+//         case 24:{
+//             cout<< "P M "<<a;
+//             break;
+//         }
+//         default:
+//         {
+//             cout<<"invalid hour and min";
+//         }
+
+//     }
+// }
+
+
+
+// Q.2 Write a Simple program in C++ to print Day of the Week using switch statements taking input as number 
 #include<iostream>
 using namespace std;
-int main()
-{
-    int a,b;
-    cout<<"Enter the number a :";
-    cin >>a;
-    cout<<"Enter the number b:";
-    cin>>b;
-    int c=0;
-    cout<<"Enter for swap: 1"<<"\n";
-    cout<<"select for 2 for max value:"<<"\n";
-    cin>>c;
-    switch (c)
-    {
-    case 1:{
-        a=a+b;
-        b=a-b;
-        a=a-b;
-        cout<<"a is value:"<<a<<"\n"<<"b is value"<<b;
-        break;
-    }
-    case 2:{
-        if(a>b){
-            cout<<"A is grater then b"<<"\n";
+int main(){
+    int day;
+    cout<<"Enter the day no:";
+    cin>>day;
+    switch(day){
+        case 1:
+        {
+            cout<<"monday";
+            break;
         }
-        else{
-            cout<<"B is greater then a:"<<"\n";
+        case 2:
+        {
+            cout<<"tuesday";
+            break;
         }
-        break;
+        case 3:
+        {
+            cout<<"wend";
+            break;
+        }
+        case 4:
+        {
+            cout<<"thur";
+            break;
+        }
+        case 5:
+        {
+            cout<<"fri";
+            break;
+        }
+        case 6:
+        {
+            cout<<"stau";
+            break;
+        }
+        case 7:
+        {
+            cout<<"Sun";
+            break;
+        }
+        default:
+        {
+            cout<<"Invalid input";
+            
+        }
     }
-    
-    default:
-        cout<<"Invalid value";
-        break;
-    }
+
 }

@@ -87,83 +87,122 @@
 
          
 
-         #include<iostream>
-         using namespace std;
-         int main()
+    //      #include<iostream>
+    //      using namespace std;
+    //      int main()
 
-         {
-              int amount;
-                cout<<"Enter the amount:";
-                cin>>amount;
-                int fiveh=0,twoh=0,oneh=0,fifty=0,twenty=0,ten=0,five=0,two=0,one=0;
-        if(amount>=500)
-        {
-            int sum =amount-500;
-            amount=sum;
-            fiveh++;
-        }
-         if(amount>=200)
-        {
-            int sum =amount-200;
-            amount=sum;
-            twoh++;
-        }
-         if(amount>=100)
-        {
-            int sum =amount-100;
-            amount=sum;
-            oneh++;
-        } 
-        if(amount>=50)
-        {
-            int sum =amount-50;
-            amount=sum;
-            fifty++;
-        } 
-        if(amount>=20)
-        {
-            int sum =amount-20;
-            amount=sum;
-            twenty++;
-        }
-         if(amount>=10)
-        {
-            int sum =amount-10;
-            amount=sum;
-            ten++;
-        } 
-        if(amount>=5)
-        {
-            int sum =amount-5;
-            amount=sum;
-            five++;
-        }
-         if(amount>=2)
-        {
-            int sum =amount-2;
-            amount=sum;
-            two++;
-        }
-        if(amount >=1)
-        {
-            int sum =amount-1;
-            amount=sum;
-            one++;
-            cout<<sum;
-        }
+    //      {
+    //           int amount;
+    //             cout<<"Enter the amount:";
+    //             cin>>amount;
+    //             int fiveh=0,twoh=0,oneh=0,fifty=0,twenty=0,ten=0,five=0,two=0,one=0;
+    //     if(amount>=500)
+    //     {
+    //         int sum =amount-500;
+    //         amount=sum;
+    //         fiveh++;
+    //     }
+    //      if(amount>=200)
+    //     {
+    //         int sum =amount-200;
+    //         amount=sum;
+    //         twoh++;
+    //     }
+    //      if(amount>=100)
+    //     {
+    //         int sum =amount-100;
+    //         amount=sum;
+    //         oneh++;
+    //     } 
+    //     if(amount>=50)
+    //     {
+    //         int sum =amount-50;
+    //         amount=sum;
+    //         fifty++;
+    //     } 
+    //     if(amount>=20)
+    //     {
+    //         int sum =amount-20;
+    //         amount=sum;
+    //         twenty++;
+    //     }
+    //      if(amount>=10)
+    //     {
+    //         int sum =amount-10;
+    //         amount=sum;
+    //         ten++;
+    //     } 
+    //     if(amount>=5)
+    //     {
+    //         int sum =amount-5;
+    //         amount=sum;
+    //         five++;
+    //     }
+    //      if(amount>=2)
+    //     {
+    //         int sum =amount-2;
+    //         amount=sum;
+    //         two++;
+    //     }
+    //     if(amount >=1)
+    //     {
+    //         int sum =amount-1;
+    //         amount=sum;
+    //         one++;
+    //         cout<<sum;
+    //     }
         
-          cout<<"fifty hundred:"<<fiveh<<"\n";
-    cout<<"two  hundred:"<<twoh<<"\n";
-    cout<<"One hundred:"<<oneh<<"\n";
-    cout<<"fifty :"<<fifty<<"\n";
-    cout<<"twenty rupes:"<<twenty<<"\n";
-    cout<<"ten repuy:"<<ten<<"\n";
-    cout<<"five:"<<five<<"\n";
-    cout<<"two"<<two<<"\n";
-    cout<<"One"<<one<<"\n";
-         }
+    //       cout<<"fifty hundred:"<<fiveh<<"\n";
+    // cout<<"two  hundred:"<<twoh<<"\n";
+    // cout<<"One hundred:"<<oneh<<"\n";
+    // cout<<"fifty :"<<fifty<<"\n";
+    // cout<<"twenty rupes:"<<twenty<<"\n";
+    // cout<<"ten repuy:"<<ten<<"\n";
+    // cout<<"five:"<<five<<"\n";
+    // cout<<"two"<<two<<"\n";
+    // cout<<"One"<<one<<"\n";
+    //      }
+
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int i=1;
+    do{
+        if(1%2==0)
+        {
+            cout<<i;
+        }  
+         i++;
+    }
+    while(i<=10);
+
+    //  do{
+    //     if(i%2!=0)
+    //     {
+    //         cout<<i;
+    //     }
+    //     i++;
+
+    //   }
+    //  while(i<=10);
+
+    // i=10;
+    //  do{
+    //     cout<<i;
+    //     i--;
+    //  }
+    //  while(i!=0);
+
+    // do{
+        
+    //     cout<<i*i<<"\n";
+    //     i++;
+    // }
+    // while(i<=10);
 
 
 
-        //  it is called exit loop it will excatue the statment till the condition is true otherwise it will come out the loop.
-        //  note:the do while sstatement will the excate the statement one time.wheater the condition is true or false
+}
