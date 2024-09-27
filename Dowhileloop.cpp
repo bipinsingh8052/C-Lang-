@@ -164,20 +164,20 @@
     //      }
 
 
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-int main()
-{
-    int i=1;
-    do{
-        if(1%2==0)
-        {
-            cout<<i;
-        }  
-         i++;
-    }
-    while(i<=10);
+// int main()
+// {
+//     int i=1;
+//     do{
+//         if(1%2==0)
+//         {
+//             cout<<i;
+//         }  
+//          i++;
+//     }
+//     while(i<=10);
 
     //  do{
     //     if(i%2!=0)
@@ -205,4 +205,44 @@ int main()
 
 
 
+// }
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a=0;
+    cin>>a;
+    // int i=1;
+    // do{
+      
+    //     cout<<i*a<<"\n";
+    //     i++;
+    // }while(i<=10);
+    // int j=0;
+    // int l=0;
+    // do{
+    //     l=j+l;
+    //     j++;
+    // }
+    // while(j<=a);
+    // cout<<"normal"<<l<<"\n";
+    // for(int i=1; i<=a ;i++)
+    // {
+    //     a=a*1;
+    //     i++;
+    //     cout<<a
+    // }
+    int m=1;
+    int y=1;
+    do{
+
+        m=m*a;
+      
+        
+        a--;
+    }
+    while(a!=1);
+    cout<<"sum"<<m<<"\n";
+    return 0;
 }
