@@ -207,12 +207,12 @@
 
 // }
 
-#include<iostream>
-using namespace std;
-int main()
-{
-    int a=0;
-    cin>>a;
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int a=0;
+//     cin>>a;
     // int i=1;
     // do{
       
@@ -233,16 +233,48 @@ int main()
     //     i++;
     //     cout<<a
     // }
-    int m=1;
-    int y=1;
-    do{
+//     int m=1;
+//     int y=1;
+//     do{
 
-        m=m*a;
+//         m=m*a;
       
         
-        a--;
-    }
-    while(a!=1);
-    cout<<"sum"<<m<<"\n";
-    return 0;
+//         a--;
+//     }
+//     while(a!=1);
+//     cout<<"sum"<<m<<"\n";
+//     return 0;
+// }
+
+
+
+#include<iostream>
+using namespace std;
+int main()
+
+{
+
+    int a;
+    cout<<"Enter the number:";
+    cin>>a;
+    int b=0;
+    int c=1;
+    int counter=0;
+     do
+     {
+        b=c*c;
+        if(b==a){
+            cout<<c<<"\n";
+            break;
+        }
+        c++;
+        counter++;
+
+
+     }while(c<a/4);
+     cout<<counter<<"normal";
+     if(a/4 == counter){
+        cout<<"Not valied";
+     }
 }
