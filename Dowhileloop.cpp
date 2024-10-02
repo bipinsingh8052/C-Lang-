@@ -249,32 +249,71 @@
 
 
 
+// #include<iostream>
+// using namespace std;
+// int main()
+
+// {
+
+//     int a;
+//     cout<<"Enter the number:";
+//     cin>>a;
+//     int b=0;
+//     int c=1;
+//     int counter=0;
+//      do
+//      {
+//         b=c*c;
+//         if(b==a){
+//             cout<<c<<"\n";
+//             break;
+//         }
+//         c++;
+//         counter++;
+
+
+//      }while(c<a/4);
+//     //  cout<<counter<<"normal";
+//      if(a/4 == counter){
+//         cout<<"Not valied";
+//      }
+//      if(a==2){
+//         cout<<1;
+//      }
+//      if(a==4){
+//         cout<<2;
+//      }
+//      if(a==9){
+//         cout<<3;
+//      }
+//      if(a==16){
+//         cout<<4;
+//      }
+// }
+
+
 #include<iostream>
 using namespace std;
-int main()
-
-{
-
+int main(){
     int a;
-    cout<<"Enter the number:";
+    cout<<"Enter the nu:";
     cin>>a;
-    int b=0;
-    int c=1;
-    int counter=0;
-     do
-     {
-        b=c*c;
-        if(b==a){
-            cout<<c<<"\n";
-            break;
+    int i=1;
+   bool j=false;
+    do{
+        if(a%i==0){
+            j=true;
         }
-        c++;
-        counter++;
-
-
-     }while(c<a/4);
-     cout<<counter<<"normal";
-     if(a/4 == counter){
-        cout<<"Not valied";
-     }
+        
+            i++;
+         j=false;
+       
+    }while(i<=a);
+    if(j==true){
+        cout<<" not prime number";
+    }
+    else {
+        cout<<"prime no:";
+    }
+    
 }
