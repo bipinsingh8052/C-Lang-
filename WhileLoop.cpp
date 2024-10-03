@@ -27,11 +27,39 @@ int main()
 {
     int a;
     cout<<"Enter the number;";
-    cout<<a;
-    float total;
-    for(int i=1;i<=a;i++)
+    cin>>a;
+    // float total;
+    // for(int i=1;i<=a;i++)
 
-    {
-        if()
+    // {
+    //     if()
+    // }
+    int i=1;
+    int total=0;
+    // while(i<a){
+    //     if(a%i==0){
+    //         total=total+i;
+    //     }
+    //     i++;
+    // }
+    // if(a==total){
+    //     cout<<" perfect number:";
+    // }
+    // else{
+    //     cout<<"not prefect number:";
+    // }
+    // total=0;
+    // i=0;
+    while(i<=a){
+        if(a%i==0){
+            total++;
+        }
+        i++;
+    }
+    if(total==2){
+        cout<<"prime number:";
+    }
+    else{
+        cout<<"Not a prime number:";
     }
 }
