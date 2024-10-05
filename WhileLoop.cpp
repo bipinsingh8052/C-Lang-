@@ -28,12 +28,6 @@ int main()
     int a;
     cout<<"Enter the number;";
     cin>>a;
-    // float total;
-    // for(int i=1;i<=a;i++)
-
-    // {
-    //     if()
-    // }
     int i=1;
     int total=0;
     // while(i<a){
@@ -50,16 +44,45 @@ int main()
     // }
     // total=0;
     // i=0;
-    while(i<=a){
-        if(a%i==0){
-            total++;
-        }
-        i++;
+    // while(i<=a){
+    //     if(a%i==0){
+    //         total++;
+    //     }
+    //     i++;
+    // }
+    // if(total==2){
+    //     cout<<"prime number:";
+    // }
+    // else{
+    //     cout<<"Not a prime number:";
+    // }
+    // while(a!=0){
+    //     int digit=a%10;
+    //     total++;
+    //     a=a/10;
+    // }
+    // while(a!=0){
+    //     int digit=a%10;
+    //     total=total+digit;
+    //     a=a/10;
+    // }
+    // cout<<total;
+    // int fact=1;
+    // while(a!=0){
+    //     fact=fact*a;
+    //     a--;
+    // }
+    // cout<<fact;
+    int rev=0;
+    while(a!=0){
+        int digit=a%10;
+         a=a/10;
+        rev=rev*10+digit;
+        // rev=rev+digit*10;
+
+       
     }
-    if(total==2){
-        cout<<"prime number:";
-    }
-    else{
-        cout<<"Not a prime number:";
-    }
+    cout<<rev;
+    // int j=09;
+    // cout<<j;
 }

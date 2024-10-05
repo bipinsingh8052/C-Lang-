@@ -114,14 +114,25 @@ int main()
 //     }
 //     cout<<count;
 
-    int b =23 |51;
-    cout<<b;
+    // int b =23 |51;
+    // cout<<b;
 
     // Xor operater
-    b=19^8;
-    b=-12;
-    b=123456<<6;
-    cout << b;
-    b=1234>>2;
-    cout<<b;
+    // b=19^8;
+    // b=-12;
+    // b=123456<<6;
+    // cout << b;
+    // b=1234>>2;
+    // cout<<b;
+    // for(int i=10;i>0;i--){
+    //     cout<<i<<"\n";
+    // }
+    int b=0;
+    cout<<"ENter the power:";
+    cin >>b;
+    int c=1;
+    for(int i=1;i<=b;i++){
+        c=c*a;
+    }
+    cout<<c;
 }
