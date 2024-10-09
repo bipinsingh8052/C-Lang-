@@ -84,9 +84,9 @@
 using namespace std;
 int main()
 {
-    int a;
-    cout<<"Enter the number:";
-    cin>>a;
+    // int a;
+    // cout<<"Enter the number:";
+    // cin>>a;
     // int digit=0;
     // int total=0;
     // while(a>0){
@@ -127,12 +127,109 @@ int main()
     // for(int i=10;i>0;i--){
     //     cout<<i<<"\n";
     // }
-    int b=0;
-    cout<<"ENter the power:";
-    cin >>b;
-    int c=1;
-    for(int i=1;i<=b;i++){
-        c=c*a;
+    // int b=0;
+    // cout<<"ENter the power:";
+    // cin >>b;
+    // int c=1;
+    // for(int i=1;i<=b;i++){
+    //     c=c*a;
+    // }
+    // cout<<c;
+
+
+    // for(int i=100;i<=999;i++){
+    //     for(int j=1;j<=i;j++){
+
+    //     }
+    // }
+    // int d,e,f,g;
+    // if(a>=100&&a<=999){
+       
+        
+    // }
+
+    // else{
+    //     cout<<"Invalid no:";
+    // }
+
+    //  d=a%10;
+    //     a=a/10;
+    //     e=a%10;
+    //     a=a/10;
+    //     f=a%10;
+    //     a=a/10;
+    //     g=f*f*f+d*d*d+e*e*e;
+    // cout<<d<<"\n";
+    // cout<<e<<"\n";
+    // cout<<f<<"\n";
+    // cout<<g;
+
+
+
+    // int a=34521;
+    // int last=a%10;
+    // int first=0;
+    // int total=0;
+    // while(a!=0){
+    //     first=a%10;
+    //     int digit=a%10;
+    //     total=total*10+digit;
+    //     a=a/10;
+    // }
+
+    // cout<<first<<"nu:"<<last<<"no"<<"\n";
+    // int sum=first+last;
+    // cout<<sum<<"\n";
+    // cout<<total;
+    // cout<<36/60;
+
+//  // ARMSTRONG NUMBER FIND
+//     int a;
+//     cout<<"Enter the no:";
+//     cin>>a;
+//     int b=a;
+//     int c=0;
+//     if(a>99&&a<=999){
+//        for(;a!=0;){
+//         int digit=a%10;
+//         c=c+digit*digit*digit;
+//         a=a/10; 
+//         }
+//         if(b==c){
+//         cout<<"Armstrong number:";
+//         }
+//         else{
+//             cout<<"not armstrong no:";
+//         }
+//     }
+//     else{
+//         cout<<"invalid no:";
+//     }
+
+
+
+// digit number find the first no and last no and sum:
+ int a;
+ cout<<"Enter the number :";
+
+ cin>>a;
+ int first=0;
+ int last=0;
+ int counter=0;
+ while(a>0){
+    int digit =a%10;
+    counter++;
+    if(counter==1){
+        last=digit;
     }
-    cout<<c;
+    first=digit;
+    a=a/10;
+ }
+ cout<<"f"<<first<<"\n";
+ cout<<"l"<<last<<"\n";
+
+
+
+
+    
 }
