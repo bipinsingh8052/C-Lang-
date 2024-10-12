@@ -184,49 +184,58 @@ int main()
     // cout<<36/60;
 
 //  // ARMSTRONG NUMBER FIND
-//     int a;
-//     cout<<"Enter the no:";
-//     cin>>a;
-//     int b=a;
-//     int c=0;
-//     if(a>99&&a<=999){
-//        for(;a!=0;){
-//         int digit=a%10;
-//         c=c+digit*digit*digit;
-//         a=a/10; 
-//         }
-//         if(b==c){
-//         cout<<"Armstrong number:";
-//         }
-//         else{
-//             cout<<"not armstrong no:";
-//         }
-//     }
-//     else{
-//         cout<<"invalid no:";
-//     }
+    // int a;
+    // cout<<"Enter the no:";
+    // cin>>a;
+    // int b=a;
+    // int c=0;
+    // if(a>99&&a<=999){
+    //    for(;a!=0; a=a/10){
+    //     int digit=a%10;
+    //     c=c+(digit*digit*digit);
+       
+    //     }
+    //     if(b==c){
+    //     cout<<"Armstrong number:";
+    //     }
+    //     else{
+    //         cout<<"not armstrong no:";
+    //     }
+    // }
+    // else{
+    //     cout<<"invalid no:";
+    // }
 
+// // palindrom number
 
-
-// digit number find the first no and last no and sum:
+// // digit number find the first no and last no and sum:
  int a;
  cout<<"Enter the number :";
 
  cin>>a;
+ int palindrom=a;
+ int palSum=0;
  int first=0;
  int last=0;
  int counter=0;
- while(a>0){
+ for(;a>0;a=a/10){
     int digit =a%10;
     counter++;
+    palSum=palSum*10+digit;
     if(counter==1){
         last=digit;
     }
     first=digit;
-    a=a/10;
+ }
+ if(palindrom==palSum){
+    cout<<"palindrom no:"<<"\n";
+ }
+ else{
+    cout<<"not palindrom number:"<<"\n";
  }
  cout<<"f"<<first<<"\n";
  cout<<"l"<<last<<"\n";
+ cout<<first+last;
 
 
 
