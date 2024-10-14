@@ -209,36 +209,109 @@ int main()
 // // palindrom number
 
 // // digit number find the first no and last no and sum:
- int a;
- cout<<"Enter the number :";
+//  int a;
+//  cout<<"Enter the number :";
 
- cin>>a;
- int palindrom=a;
- int palSum=0;
- int first=0;
- int last=0;
- int counter=0;
- for(;a>0;a=a/10){
-    int digit =a%10;
-    counter++;
-    palSum=palSum*10+digit;
-    if(counter==1){
-        last=digit;
-    }
-    first=digit;
- }
- if(palindrom==palSum){
-    cout<<"palindrom no:"<<"\n";
- }
- else{
-    cout<<"not palindrom number:"<<"\n";
- }
- cout<<"f"<<first<<"\n";
- cout<<"l"<<last<<"\n";
- cout<<first+last;
-
-
+//  cin>>a;
+//  int palindrom=a;
+//  int palSum=0;
+//  int first=0;
+//  int last=0;
+//  int counter=0;
+//  for(;a>0;a=a/10){
+//     int digit =a%10;
+//     counter++;
+//     palSum=palSum*10+digit;
+//     if(counter==1){
+//         last=digit;
+//     }
+//     first=digit;
+//  }
+//  if(palindrom==palSum){
+//     cout<<"palindrom no:"<<"\n";
+//  }
+//  else{
+//     cout<<"not palindrom number:"<<"\n";
+//  }
+//  cout<<"f"<<first<<"\n";
+//  cout<<"l"<<last<<"\n";
+//  cout<<first+last;
 
 
-    
+
+
+// // w.a.p to HCF 
+// int n1=0;
+// cout<<"Enter the fiirst number:";
+// cin>>n1;
+// int n2=0;
+// cout<<"Enter the number2:";
+// cin>>n2;
+// int hcf=0;
+
+// for(int i=1;i<=n1||i<=n2;i++){
+// if(n1%i==0&&n2%i==0){
+//     hcf=i;
+// }
+// }
+// cout<<hcf;
+
+
+// // w.a.p to lCF 
+// int n1=0;
+// cout<<"Enter the fiirst number:";
+// cin>>n1;
+// int n2=0;
+// cout<<"Enter the number2:";
+// cin>>n2;
+// int max=n1>n2?n1:n2;
+
+// while(true){
+// if(max%n1==0&&max%n2==0){
+//     cout<<max;
+//     break;
+// }
+// max++;
+// }
+// cout<<lcm;
+
+// // w.a.p to HCF and lcm 
+// int n1=0;
+// cout<<"Enter the fiirst number:";
+// cin>>n1;
+// int n2=0;
+// cout<<"Enter the number2:";
+// cin>>n2;
+// int hcf=0;
+
+// for(int i=1;i<=n1||i<=n2;i++){
+// if(n1%i==0&&n2%i==0){
+//     hcf=i;
+// }
+// }
+
+// int lcm;
+// \
+// cout<<lcm;
+// cout<<hcf;
+
+
+
+
+int a=1234;
+int f,l,m,m2;
+l=a%10;
+a=a/10;
+m2=a%10;
+a=a/10;
+m=a%10;
+a=a/10;
+f=a%10;
+a=a/10;
+int total=0;
+total=(total*10)+l;
+total=total*10+m2;
+total=total*10+m;
+total=total*10+f;
+cout<<total;
 }
