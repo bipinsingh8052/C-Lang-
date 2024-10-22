@@ -276,42 +276,39 @@ int main()
 // cout<<lcm;
 
 // // w.a.p to HCF and lcm 
-// int n1=0;
-// cout<<"Enter the fiirst number:";
-// cin>>n1;
-// int n2=0;
-// cout<<"Enter the number2:";
-// cin>>n2;
-// int hcf=0;
+int n1=0;
+cout<<"Enter the fiirst number:";
+cin>>n1;
+int n2=0;
+cout<<"Enter the number2:";
+cin>>n2;
+int hcf=0;
 
-// for(int i=1;i<=n1||i<=n2;i++){
-// if(n1%i==0&&n2%i==0){
-//     hcf=i;
-// }
-// }
-
-// int lcm;
-// \
-// cout<<lcm;
-// cout<<hcf;
+for(int i=1;i<=n1||i<=n2;i++){
+if(i%n1==0&&i%n2==0){
+    hcf=i;
+}
+}
+cout<<n1*n2/hcf;
+cout<<hcf;
 
 
 
 
-int a=1234;
-int f,l,m,m2;
-l=a%10;
-a=a/10;
-m2=a%10;
-a=a/10;
-m=a%10;
-a=a/10;
-f=a%10;
-a=a/10;
-int total=0;
-total=(total*10)+l;
-total=total*10+m2;
-total=total*10+m;
-total=total*10+f;
-cout<<total;
+// int a=1234;
+// int f,l,m,m2;
+// l=a%10;
+// a=a/10;
+// m2=a%10;
+// a=a/10;
+// m=a%10;
+// a=a/10;
+// f=a%10;
+// a=a/10;
+// int total=0;
+// total=(total*10)+l;
+// total=total*10+m2;
+// total=total*10+m;
+// total=total*10+f;
+// cout<<total;
 }
