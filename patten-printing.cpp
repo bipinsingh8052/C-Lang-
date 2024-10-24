@@ -177,5 +177,23 @@ int nu=0;
     cout<<"patten number:";
     cout<<"\n";
 
+for(int i=1;i<=end;i++){
+    for(int j=end;j>i;j--){
+        cout<<" ";
+    }
+    for(int k=i;k>0;k--){
+        cout<<"* ";
+    }
+    cout<<"\n";
+}
+
+cout<<"patten number:";
+    cout<<"\n";
+//   *
+//  * *
+//*  *   *
+
+
+
     return 0;
 }
