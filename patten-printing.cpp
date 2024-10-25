@@ -182,7 +182,7 @@ for(int i=1;i<=end;i++){
         cout<<" ";
     }
     for(int k=i;k>0;k--){
-        cout<<"* ";
+        cout<<"*";
     }
     cout<<"\n";
 }
@@ -192,6 +192,58 @@ cout<<"patten number:";
 //   *
 //  * *
 //*  *   *
+int di=1;
+
+for(int i=1;i<=end;i++){
+    for(int j=end;j>i;j--){
+        cout<<" ";
+    }
+    for(int k=1;k<=i;k++){
+        
+       if(di==1){
+        cout<<"1 ";
+        di--;
+       }
+       else{
+        cout<<"0 ";
+        di++;
+       }
+    }
+    
+    cout<<"\n";
+    
+}
+
+cout<<"patten number:";
+    cout<<"\n";
+
+
+    for(int i=1;i<=end;i++){
+        for(int j=end;j>i;j--){
+            cout<<"*";
+        }
+        cout<<"\n";
+    }
+    cout<<"patten number:";
+    cout<<"\n";
+
+
+    for(int i=1;i<=end;i++){
+
+        for(int j=1;j<=i;j++){
+            cout<<" ";
+        }
+        for(int k=end ;k>i;k--){
+            cout<<"*";
+        }
+
+        cout<<"\n";
+    }
+
+
+     cout<<"patten number:";
+    cout<<"\n";
+
 
 
 
