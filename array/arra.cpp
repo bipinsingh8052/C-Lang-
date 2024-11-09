@@ -20,5 +20,19 @@ int main(){
     cout<<sizeof(b)/sizeof(b[0])<<"\n";
     int size=sizeof(b)/sizeof(b[0]);
     cout<<size;
+
+// forward traveling
+    for(int i=0 ;i<=size-1;i++){
+        cout<<a[i];
+    }
+    // backward travelling
+    for(int i=size-1;i>=0;i--){
+        cout<<a[i];
+    }
+    //  important topic
+    cout<<4[a]; //they give it index value number of 4
+    cout<<a[4];  //they  give you garbage value
+    cout<<-4[a]; //this is also give you index value but its converd in negative
+    
     
 }
