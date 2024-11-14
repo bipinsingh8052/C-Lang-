@@ -172,25 +172,91 @@
 //   }
 // }
 
-// W.a.p To sift all Zero at the last by holding bill position in array?
+
+
+
+// // W.a.p To sift all Zero at the last by holding bill position in array?
+// #include<iostream>
+// using namespace std;
+// int main(){
+//   int a[]={2,0,7,0,3,0,6};
+//   int len =sizeof(a)/sizeof(a[0]);
+//   int len2=len;
+//   int b[len2]={};
+//   int k=0;
+//   int temp=0;
+//   for(int i=0;i<=len-1;i++){
+//     if(a[i]==0){
+//        temp=a[i];
+//        b[len-1]=temp;
+//        k++;
+//        cout<<a[i]<<"\n";
+//       }
+//       else{
+
+//         temp=a[i];
+//         b[k]=temp;
+//         // b[k]=a[i];
+//         k++;
+//         cout<<a[i]<<"\n";
+//       }
+//   }
+//   cout<<b;
+//   // for(int i=0;i<=len;i++){
+//   //   cout<<b[i];
+//   // }
+// }
+
+
+// //w.a.p to sum of all odd number in the given array??
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//       int arr[]={64,24,81,312,25,121,76};
+//       int len=sizeof(arr)/sizeof(arr[0]);
+//       int total=0;
+//       for(int i=0;i<=len-1;i++){
+//            if(arr[i]%2 !=0){
+//             total+=arr[i];
+//            }
+//       }
+//       cout<<total;
+// }
+
+
+
+// // W.A.P to find the square root of number is given by the array
+// #include<iostream>
+// using namespace std;
+// int main(){
+//       int a[]={25,4,8,81,121,225};
+//       int len =sizeof(a)/sizeof(a[0]);
+//       for(int i=0;i<=len-1;i++){
+//             for(int j=1;j*j<=a[i];j++){
+//                   if(j*j==a[i]){
+//                         cout<<a[i]<<"\t";
+//                         break;
+//                   }
+//             }
+//       }
+// }
+
+
+// W.A.P to print the decending order the array?
 #include<iostream>
 using namespace std;
 int main(){
-  int a[]={2,0,7,0,3,0,6};
-  int len =sizeof(a)/sizeof(a[0]);
-  int len2=len;
-  int b[len2]={};
-  for(int i=0;i<=len-1;i++){
-    for(int j=0;j<=i;j++){
-      if(a[i]==0){
-        b[len2-1]=a[i];
+      int a[]={1,2,312,42,534,5,9};
+      int len =sizeof(a)/sizeof(a[0]);
+      int mik=INT8_MIN;
+      for(int i=0;i<=len-1;i++){
+            
+            for(int j=i;j<=len-1;j++){
+                  if(a[i]>a[j]){
+                        mik=a[j];
+                  }
+            }
+            cout<<mik<<"\t";
       }
-      else{
-        b[len2]=a[i];
-      }
-    }
-  }
-  for(int i=0;i<=len2;i++){
-    cout<<b[i];
-  }
 }
