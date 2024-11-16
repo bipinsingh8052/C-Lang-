@@ -175,36 +175,43 @@
 
 
 
-// // W.a.p To sift all Zero at the last by holding bill position in array?
+// // // W.a.p To sift all Zero at the last by holding bill position in array?
 // #include<iostream>
 // using namespace std;
 // int main(){
 //   int a[]={2,0,7,0,3,0,6};
 //   int len =sizeof(a)/sizeof(a[0]);
-//   int len2=len;
-//   int b[len2]={};
-//   int k=0;
-//   int temp=0;
+// //   //shift the all zero in right side
 //   for(int i=0;i<=len-1;i++){
-//     if(a[i]==0){
-//        temp=a[i];
-//        b[len-1]=temp;
-//        k++;
-//        cout<<a[i]<<"\n";
+//     for(int j=0;j<=len-2;j++){
+//       if(a[j]==0){
+//             int temp =a[j+1];
+//             a[j+1]=a[j];
+//             a[j]=temp;
 //       }
-//       else{
-
-//         temp=a[i];
-//         b[k]=temp;
-//         // b[k]=a[i];
-//         k++;
-//         cout<<a[i]<<"\n";
-//       }
+//      cout<<"TOTAL"<<a[j]<<"\n";
+//     }
 //   }
-//   cout<<b;
-//   // for(int i=0;i<=len;i++){
-//   //   cout<<b[i];
-//   // }
+
+//   for(int i=0;i<=len-1;i++){
+//       cout<<a[i]<<"\t";
+//   }
+//   cout<<"\n";
+
+// // //Shift the all zero in left side 
+//  for(int i=0;i<=len-1;i++){
+//       for(int j=1;j<=len-1;j++){
+//             if(a[j]==0){
+//                   int temp =a[j-1];
+//                   a[j-1]=a[j];
+//                   a[j]=temp;
+//             }
+//       }
+//  }
+ 
+//   for(int i=0;i<=len-1;i++){
+//     cout<<a[i]<<"\t";
+//   }
 // }
 
 
@@ -243,20 +250,96 @@
 // }
 
 
-// W.A.P to print the decending order the array?
-#include<iostream>
-using namespace std;
-int main(){
-      int a[]={1,2,312,42,534,5,9};
-      int len =sizeof(a)/sizeof(a[0]);
-      int mik=INT8_MIN;
-      for(int i=0;i<=len-1;i++){
+// // W.A.P to print the decending order the array?
+// #include<iostream>
+// using namespace std;
+// int main(){
+//       int a[]={1,2,312,42,534,5,9};
+//       int len =sizeof(a)/sizeof(a[0]);
+     
+//       for(int i=0;i<=len-1;i++){
             
-            for(int j=i;j<=len-1;j++){
-                  if(a[i]>a[j]){
-                        mik=a[j];
-                  }
-            }
-            cout<<mik<<"\t";
-      }
-}
+//             for(int j=0;j<=len-2;j++){
+//                   if(a[j]>a[j+1]){
+//                         int temp =a[j+1];
+//                         a[j+1]=a[j];
+//                         a[j]=temp;
+//                   }
+//             }
+//       }
+//       for(int i=0;i<=len-1;i++){
+//             cout<<a[i]<<"\t";
+//       }
+// }
+
+
+// // w.a.p to print the ascending order in array
+// #include<iostream>
+// using namespace std;
+// int main(){
+//       int a[]={1,23543,4321,5432,7,5,4,3,2,1};
+//       int len =sizeof(a)/sizeof(a[0]);
+//       for(int i=0;i<=len-1;i++){
+//             for(int j=0;j<=len-2;j++){
+//                   if(a[j]>a[j+1])
+//                   {
+//                         int temp=a[j+1];
+//                         a[j+1]=a[j];
+//                         a[j]=temp;
+//                   }     
+//             }
+//       }
+//       for(int i=0;i<=len-1;i++){
+//             cout<<a[i]<<"\t";
+//       }
+// }
+
+
+// // w.a.p to swap the first value and last value in the given array
+// #include<iostream>
+// using namespace std;
+// int main(){
+//       int a[]={1,2,33,4,5,78,9};
+//       int len =sizeof(a)/sizeof(a[0]);
+//       int temp=0;
+//       temp=a[len-1];
+//       a[len-1]=a[0];
+//       a[0]=temp;
+//       for(int i=0;i<=len-1;i++){
+//             cout<<a[i]<<"\t";
+//       }
+// }
+
+
+// // w.a.p Find the unique  number by given the array
+// #include<iostream>
+// using namespace std;
+// int main(){
+//       int a[]={1,2,3,2,1,8,};
+//       int len =sizeof(a)/sizeof(a[0]);
+//       for(int i=0;i<=len-1;i++){
+//             int count=0;
+//             for(int j=0;j<=len-1;j++){
+//                   if(a[i]==a[j]){
+//                         count++;
+//                   }
+//             }
+//             if(count==1){
+//                   cout<<a[i]<<"\t";
+//             }
+//       }
+// }
+
+
+// // w.a.p the sum of alternate number form given array
+// #include<iostream>
+// using namespace std;
+// int main(){
+//       int a[]={1,2,3,3,4,5,6,7,7};
+//       int len=sizeof(a)/sizeof(a[0]);
+//       int sum=0;
+//       for(int i=0;i<=len-1;i+=2){
+//                   sum+=a[i];
+//       }
+//       cout<<sum;
+// }
