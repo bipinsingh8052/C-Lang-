@@ -238,7 +238,7 @@
 // using namespace std;
 // int main(){
 //       int a[]={25,4,8,81,121,225};
-//       int len =sizeof(a)/sizeof(a[0]);
+//     int len =sizeof(a)/sizeof(a[0]);
 //       for(int i=0;i<=len-1;i++){
 //             for(int j=1;j*j<=a[i];j++){
 //                   if(j*j==a[i]){
@@ -343,3 +343,32 @@
 //       }
 //       cout<<sum;
 // }
+
+// find the armstrong number in given by the array
+#include<iostream>
+using namespace std;
+int main(){
+      int a[]={1,153,3,1634,371,135,7};
+      int len =sizeof(a)/sizeof(a[0]);
+      for(int i=0;i<=len-1;i++){
+            int arms=1;
+            int number=a[i];
+            int numb =a[i];
+            int count=0;
+            while(number!=0)
+            {
+                  int num=number/10;
+                  count++;
+                  number=number%10;
+            }
+            while(numb!=0){
+                  int digit=numb/10;
+                  arms=count*digit;
+                  numb=numb%10;
+            }
+            if(arms == a[i]){
+                  cout<<a[i];
+            }
+            cout<<arms<<"\n";
+      }
+}
