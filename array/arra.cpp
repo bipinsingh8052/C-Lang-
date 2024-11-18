@@ -189,10 +189,8 @@
 //             a[j+1]=a[j];
 //             a[j]=temp;
 //       }
-//      cout<<"TOTAL"<<a[j]<<"\n";
 //     }
 //   }
-
 //   for(int i=0;i<=len-1;i++){
 //       cout<<a[i]<<"\t";
 //   }
