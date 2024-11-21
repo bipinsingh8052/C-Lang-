@@ -173,17 +173,17 @@ using namespace std;
 int main(){
     int s=3;
     int l=3;
-    // cout<<"Enter the size of 1d array:"<<"\n";
-    // cin>>s;
-    // cout<<"Enter the size of second 2d index array:"<<"\n";
-    // cin>>l;
-    // cout<<"Enter the  "<<s*l<<" numbers";
-    int a[3][3]={1,2,3,4,5,6,7,8,9};
-    // for(int i=0;i<s;i++){
-    //     for(int j=0;j<l;j++){
-    //         cin>>a[i][j];
-    //     }
-    // }
+    cout<<"Enter the size of 1d array:"<<"\n";
+    cin>>s;
+    cout<<"Enter the size of second 2d index array:"<<"\n";
+    cin>>l;
+    cout<<"Enter the  "<<s*l<<" numbers";
+    int a[s][l]={1,2,3,4,5,6,7,8,9};
+    for(int i=0;i<s;i++){
+        for(int j=0;j<l;j++){
+            cin>>a[i][j];
+        }
+    }
 
     for(int i=0;i<s;i++){
             for(int j=0;j<l;j++){
@@ -191,19 +191,11 @@ int main(){
             }
             cout<<"\n";
         }
-     cout<<"THis output is given your array:"<<"\n";   
+ cout<<"THis output is given your array:"<<"\n";   
 
-    // if(s==l){
-        
-    
-    // }
-    // else{
-    //     cout<<"this is not a square form:";
-    // }
-
-
-    for(int i=0;i<s;i++){
-        for(int j=0;j<l;j++){
+    if(s==l){
+        for(int i=0;i<s;i++){
+        for(int j=i;j<l;j++){
             int temp =a[i][j];
             a[i][j]=a[j][i];
             a[j][i]=temp;
@@ -211,14 +203,15 @@ int main(){
         }
         cout<<"\n";
         }
-        cout<<"out"<<"\n";
-
-
+    }
+    else{
+        cout<<"this is not a square form:";
+    }
+    cout<<"out"<<"\n";
     for(int i=0;i<s;i++){
             for(int j=0;j<l;j++){
                 cout<<a[i][j]<<"\t";
             }
             cout<<"\n";
-        }
-    
+     }
 }
