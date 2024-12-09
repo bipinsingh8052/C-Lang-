@@ -63,7 +63,7 @@
 // }
 
 
-// // w.a.p to find the maximum value in this 2d array 
+// // // w.a.p to find the maximum value in this 2d array 
 // #include<iostream>
 // using namespace std;
 // int main(){
@@ -77,7 +77,7 @@
 //     int max=INT8_MIN;
 //     for(int i=0;i<3;i++){
 //         for(int j=0;j<3;j++){
-//             if(max<a[i][j]){
+//             if(a[i][j]>max){
 //                 max=a[i][j];
 //             }
 //         }
@@ -286,11 +286,11 @@
 
 
 
-#include<iostream>
-#include<string.h>
-using namespace std;
-int main()
-{
+// #include<iostream>
+// #include<string.h>
+// using namespace std;
+// int main()
+// {
     // char is a constant
     // char c[5]; // 1byte for null value
     // c="amit"; // error because we cannot reinitialise char 
@@ -336,20 +336,20 @@ int main()
     //     cout<< "incorrect"<<"\n";
     // }
 
-    char ram[20];
-    char temp[20];
-    cout <<"enter the value" <<'\n';
-    cin >>ram;
-    strcpy(temp,ram);
-    cout<< strrev(ram)<<"\n";
-    // if(strcmp(strrev(ram),temp)==0) or
-    if(strcmp(temp,ram)==0){ 
-        cout <<"pallendrom" <<"\n";
-    }
-    else{
-        cout << "not a pallendrom" <<'\n';
-    }
+//     char ram[20];
+//     char temp[20];
+//     cout <<"enter the value" <<'\n';
+//     cin >>ram;
+//     strcpy(temp,ram);
+//     cout<< strrev(ram)<<"\n";
+//     // if(strcmp(strrev(ram),temp)==0) or
+//     if(strcmp(temp,ram)==0){ 
+//         cout <<"pallendrom" <<"\n";
+//     }
+//     else{
+//         cout << "not a pallendrom" <<'\n';
+//     }
 
 
-}
+// }
 // w.a.p to check the given string is pallendrom or not
