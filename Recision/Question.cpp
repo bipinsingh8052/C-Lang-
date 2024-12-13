@@ -24,8 +24,10 @@ int fabi(int a,int r){
     if(a==0){
         return 1;
     }
-    r =fabi(a-1,r)+fabi(a-2,r);
-    return r;
+    if(a<0){
+        return 0;
+    }
+    return fabi(a-1,r)+fabi(a-2,r);
 }
 int main(){
     int a;
