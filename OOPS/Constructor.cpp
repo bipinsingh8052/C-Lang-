@@ -85,43 +85,52 @@
 
 
 
-#include<iostream>
-using namespace std;
-class student {
-    int roll;
-    public:student(int roll){
-        this->roll=roll;
-    }
-    void show(){
-        cout<<"rollnumber:"<<roll;
-    }
-};
-int main(){
-    student f(101);
-    f.show();
-}
+// THIS POINTER
+// this pointer is when you function argement is same name and your class data member is same name that time we use it this pointer
+
+// #include<iostream>
+// using namespace std;
+// class student {
+//     int roll;
+//     public:student(int roll){
+//         this->roll=roll;
+//     }
+//     void show(){
+//         cout<<"rollnumber:"<<roll;
+//     }
+// };
+// int main(){
+//     student f(101);
+//     f.show();
+// }
 
 
 
 // shadow copy
-#include<iostream>
-using namespace std;
-class student {
-    public: int a;
-    public :student(int a){
-        this->a=a;
-    }
-    void show(){
-        cout<<"a"<<a<<"\n";
-    }
-};
-int main(){
-    student s1(101);
-    s1.show();
-    student s2(s1);
-    s2.show();
-    s2.a=100;
-    student s3(s1);
-    s3.show();
+// you can copy one object  in second object this is called a shadow copy 
+                        // but when you can change it second object does not change it in first object
+// #include<iostream>
+// using namespace std;
+// class student {
+//     public: int a;
+//     public :student(int a){
+//         this->a=a;
+//     }
+//     void show(){
+//         cout<<"a"<<a<<"\n";
+//     }
+// };
+// int main(){
+//     student s1(101);
+//     s1.show();
+//     student s2(s1);
+//     s2.show();
+//     s2.a=100;
+//     student s3(s1);
+//     s3.show();
 
-}
+// }
+
+
+
+// Deep shadow
