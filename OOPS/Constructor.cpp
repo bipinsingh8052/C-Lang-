@@ -81,3 +81,47 @@
 //     para on(1,2,3);
 //     para k(8);
 // }
+
+
+
+
+#include<iostream>
+using namespace std;
+class student {
+    int roll;
+    public:student(int roll){
+        this->roll=roll;
+    }
+    void show(){
+        cout<<"rollnumber:"<<roll;
+    }
+};
+int main(){
+    student f(101);
+    f.show();
+}
+
+
+
+// shadow copy
+#include<iostream>
+using namespace std;
+class student {
+    public: int a;
+    public :student(int a){
+        this->a=a;
+    }
+    void show(){
+        cout<<"a"<<a<<"\n";
+    }
+};
+int main(){
+    student s1(101);
+    s1.show();
+    student s2(s1);
+    s2.show();
+    s2.a=100;
+    student s3(s1);
+    s3.show();
+
+}
