@@ -132,25 +132,72 @@
 // }
 
 
-#include<iostream>
-#include<string>
-class student {
-    char *c;
-    public: void student(char *s){
-        c=new char[20];
-        strcpy(c,s);
-    }
-    void show(){
-        cout<<"\nname"<<c<<"\n";
-    }
-    void surname(char *h){
-        strcat(c+h);
-    }
-};
-int main(){
-    
-}
+
+// 
+
+// #include<iostream>
+// #include<string.h>
+// using namespace std;
+// class student {
+//     char *c;
+//     public:
+//     student(char *s){
+//         c=new char[20];
+//         strcpy(c,s);
+//     }
+//     void show(){
+//         cout<< "\n name"<<c<<"\n";
+//     }
+//     void surname(char *h){
+//         strcat(c,h);
+//     }
+// };
+// int main(){
+//     student ju("bipin");
+//     ju.show();
+//     student hn(ju);
+//     hn.show();
+//     ju.surname("singh");
+//     ju.show();
+//     hn.show();
+
+// }
 
 
 
 // Deep shadow
+// When you create a new memory in that deep copy
+
+
+
+
+#include<iostream>
+#include<string.h>
+using namespace std;
+class student {
+    char *c;
+    public:
+    student(char *s){
+        c=new char[20];
+        strcpy(c,s);
+    }
+    student (student &on){
+        c=new char [20];
+        strcpy(c,on.c);
+    }
+    void show(){
+        cout<< "\n name"<<c<<"\n";
+    }
+    void surname(char *h){
+        strcat(c,h);
+    }
+};
+int main(){
+    student ju("bipin");
+    ju.show();
+    student hn(ju);
+    hn.surname("singh");
+    ju.show();
+    hn.show();
+
+}
