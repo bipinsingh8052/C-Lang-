@@ -132,5 +132,25 @@
 // }
 
 
+#include<iostream>
+#include<string>
+class student {
+    char *c;
+    public: void student(char *s){
+        c=new char[20];
+        strcpy(c,s);
+    }
+    void show(){
+        cout<<"\nname"<<c<<"\n";
+    }
+    void surname(char *h){
+        strcat(c+h);
+    }
+};
+int main(){
+    
+}
+
+
 
 // Deep shadow
