@@ -105,6 +105,7 @@
 // }
 
 
+// Copy constructor(when you assing it first object in second object is called ) 
 
 // shadow copy
 // you can copy one object  in second object this is called a shadow copy 
