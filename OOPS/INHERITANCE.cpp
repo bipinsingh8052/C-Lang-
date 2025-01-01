@@ -1,3 +1,9 @@
+// what is INHERITANCE
+// there are 5 type of inheritance
+
+
+
+// Example of single inHeritance 
 #include<iostream>
 using namespace std;
 
