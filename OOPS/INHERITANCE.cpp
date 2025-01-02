@@ -1,4 +1,5 @@
 // what is INHERITANCE
+// it is access the property of another(drive ,and base class) class is called it inheritance
 // there are 5 type of inheritance
 
 
