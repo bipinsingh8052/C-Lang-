@@ -188,6 +188,9 @@
 
 
 // // Hierarchial inheritance
+// avery class be connect to the parent class is called the Hierarchial inheritance
+
+
 // #include<iostream>
 // using namespace std;
 
@@ -243,6 +246,10 @@
 
 
 // hybrid heritance
+// is bascilly access the all class properties in the child class 
+
+// when you can see the dimanod problem 
+// by the virtual inheritance connect the class its solve the problem
 #include<iostream>
 using namespace std;
 
