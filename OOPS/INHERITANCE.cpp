@@ -246,10 +246,73 @@
 
 
 // hybrid heritance
-// is bascilly access the all class properties in the child class 
+// // is bascilly access the all class properties in the child class 
 
-// when you can see the dimanod problem 
-// by the virtual inheritance connect the class its solve the problem
+// // when you can see the dimanod problem 
+// // by the virtual inheritance connect the class its solve the problem
+// #include<iostream>
+// using namespace std;
+
+// class RBI{
+//     int t;
+//     public:RBI(){
+//         cout<<"\nRBI memory\n";
+//     }
+
+//     public:void show(){
+//         cout<<"\nRBI class\n";
+//     }
+//      ~RBI(){
+//         cout<<"\nRBI memory realeased";
+//     }
+// };
+// class SBI:virtual public RBI{
+//     int a;
+//     public:SBImsg(){
+//         cout<<"\nsbi memory";
+//     }
+//     ~SBI(){
+//         cout<<"\nsbi memory released\n";
+//     }
+    
+// };
+// class AXIS :virtual public RBI{
+//     int b;
+//     public: Axismsg (){
+//         cout<<"Axis bank" <<"\n";
+//     }
+//     ~AXIS(){
+//         cout<<" Axis delete"<<"\n";
+//     }
+// };
+// class custmor:public SBI,public AXIS{
+//    public :msg(){
+//    cout<<"THis is pnb bank"<<"\n";
+//    }
+//    public: custmor(){
+//    cout<<"pnb"<<"\n";
+//    }
+
+//    ~custmor(){
+//    cout<<"DELETE PUB"<<"\n";
+//    }
+// };
+// int main(){
+//    custmor r;
+//    r.msg();
+//    r.show();
+//    cout<<"size of"<<sizeof(r);
+//     // SBI s;
+// // s.Axismsg();
+   
+// }
+
+
+// What is vitual function 
+// where you can use it virtual keyword in the function declareasion is called 
+// // what is super class 
+// where you can use it virtual function
+
 #include<iostream>
 using namespace std;
 
@@ -259,34 +322,35 @@ class RBI{
         cout<<"\nRBI memory\n";
     }
 
-    public:void show(){
-        cout<<"\nRBI class\n";
+    public:virtual void show(){
+        cout<<"Rbi show";
     }
+   
      ~RBI(){
         cout<<"\nRBI memory realeased";
     }
 };
-class SBI:virtual public RBI{
+class SBI: public RBI{
     int a;
-    public:SBImsg(){
-        cout<<"\nsbi memory";
+    public:void show(){
+        cout<<"\nsbi memory  rtyuiop";
     }
     ~SBI(){
         cout<<"\nsbi memory released\n";
     }
     
 };
-class AXIS :virtual public RBI{
+class AXIS : public RBI{
     int b;
-    public: Axismsg (){
+    public:void show(){
         cout<<"Axis bank" <<"\n";
     }
     ~AXIS(){
         cout<<" Axis delete"<<"\n";
     }
 };
-class custmor:public SBI,public AXIS{
-   public :msg(){
+class custmor:public RBI{
+   public :void show(){
    cout<<"THis is pnb bank"<<"\n";
    }
    public: custmor(){
@@ -298,11 +362,77 @@ class custmor:public SBI,public AXIS{
    }
 };
 int main(){
-   custmor r;
-   r.msg();
-   r.show();
-   cout<<"size of"<<sizeof(r);
-    // SBI s;
-// s.Axismsg();
+   
+    RBI *r;
+
+    custmor c;
+    AXIS a;
+    SBI s;
+    r=&s;
+    r->show();
    
 }
+
+
+
+// // what is pura virtual function 
+// when you declare a function using virtual keyword but you declear it =0; is called a pura virtual function
+// // what is Abstract class
+// where you can use it pura virtual function is called it abstract class
+// #include<iostream>
+// using namespace std;
+
+// class RBI{
+//     int t;
+//     public:RBI(){
+//         cout<<"\nRBI memory\n";
+//     }
+
+//     public:virtual void show()=0;
+   
+//      ~RBI(){
+//         cout<<"\nRBI memory realeased";
+//     }
+// };
+// class SBI: public RBI{
+//     int a;
+//     public:void show(){
+//         cout<<"\nsbi memory  rtyuiop";
+//     }
+//     ~SBI(){
+//         cout<<"\nsbi memory released\n";
+//     }
+    
+// };
+// class AXIS : public RBI{
+//     int b;
+//     public:void show(){
+//         cout<<"Axis bank" <<"\n";
+//     }
+//     ~AXIS(){
+//         cout<<" Axis delete"<<"\n";
+//     }
+// };
+// class custmor:public RBI{
+//    public :void show(){
+//    cout<<"THis is pnb bank"<<"\n";
+//    }
+//    public: custmor(){
+//    cout<<"pnb"<<"\n";
+//    }
+
+//    ~custmor(){
+//    cout<<"DELETE PUB"<<"\n";
+//    }
+// };
+// int main(){
+   
+//     RBI *r;
+
+//     custmor c;
+//     AXIS a;
+//     SBI s;
+//     r=&s;
+//     r->show();
+   
+// }
