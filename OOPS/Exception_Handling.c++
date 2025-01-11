@@ -58,15 +58,21 @@ int main(){
             throw 9.00;
         }
     }
-    catch(int a){
-        cout<<"this is intger";
-    }
-    catch (float a){
-        cout<<"This is float";
-    }
-    catch (char a){
-        cout<<"THis is char";
+    // catch(int a){
+    //     cout<<"this is intger";
+    // }
+    // catch (float a){
+    //     cout<<"This is float";
+    // }
+    // catch (char a){
+    //     cout<<"THis is char";
 
+    // }
+
+
+    // work
+    catch(...){
+        cout<<"infindecxx";
     }
     cout<<"final";
 }
